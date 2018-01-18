@@ -13,9 +13,8 @@ body.disabled:after{
 
 
 *{
-    font-family:'Helvetica Neue';
+    /*    font-family:'HelveticaNeue';*/
 }
-
 
 
 img{
@@ -27,7 +26,96 @@ img{
     box-shadow: none;
 }
 
+p {
+    line-height: 1.7;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+/*HEADER*/
+
+header {
+    border-bottom: 8px solid #7aba48;
+}
+
+.navbar-brand img {
+    max-width: 120px;
+}
+
+#main-menu a{
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0.2rem 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    border-bottom: 3px solid #7aba48;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+/*LEAD SECTION*/
+.lead {
+    padding: 150px 0;
+}
+
+
+.lead .btn {
+    padding: 0.2rem 0.75rem;
+    padding-bottom: 0.3rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: 1rem;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.lead .btn-success{
+    background-color: #7aba48;
+    border-color: #7aba48;
+}
 
 
 
+
+/*CUSTOM CLASS STYLE*/
+
+.green-bottom-border {
+    border-bottom: 8px solid #7aba48;
+}
+
+.text-green {
+    color: #7aba48;
+    border-bottom: solid 3px #7aba48;
+    padding-bottom: 30px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.h3-border:before {
+    position: absolute;
+    height: 6px;
+    width: 200px;
+    background: #7aba48;
+    z-index: 10;
+    display: block;
+    content: '';
+    bottom: -25px;
+    left: -100px;
+}
 
