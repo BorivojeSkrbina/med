@@ -42,6 +42,27 @@ h3 {
     position: relative;
 }
 
+h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+figure {
+    margin: 0;
+}
+
+.col-no-padding {
+    margin: 0; 
+}
+
+.col-no-padding > div{
+    padding: 0; 
+}
+
+
+
+
+
 /*HEADER*/
 
 header {
@@ -49,7 +70,7 @@ header {
 }
 
 .navbar-brand img {
-    max-width: 120px;
+    max-width: 130px;
 }
 
 #main-menu a{
@@ -65,15 +86,41 @@ header {
     border-bottom: 3px solid #7aba48;
 }
 
+.navbar-nav .dropdown-menu {
+    background: #7aba48;
+}
+
 .dropdown-toggle::after {
     display: none;
 }
 
 /*LEAD SECTION*/
 .lead {
-    padding: 150px 0;
+
 }
 
+.lead .container {
+
+    position: relative;
+    padding: 150px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.lead .container:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    content: '';
+    bottom: 0;
+    left: 0;
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 1%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 90%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 1%,rgba(255,255,255,0) 10%,rgba(255,255,255,0) 90%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 1%,rgba(255,255,255,0) 10%,rgba(255,255,255,0) 90%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
 
 .lead .btn {
     padding: 0.2rem 0.75rem;
@@ -83,6 +130,8 @@ header {
     border-radius: 1rem;
     font-style: italic;
     margin-top: 50px;
+    position: relative;
+    z-index: 10;
 }
 
 .lead .btn-success{
@@ -90,6 +139,35 @@ header {
     border-color: #7aba48;
 }
 
+/*PLATFORM SECTION*/
+
+
+/*PRESENTATION SECTION*/
+
+.presentation article {
+    border-bottom: solid 2px #7aba48;
+}
+
+
+.presentation article {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.presentation figure {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.presentation h5 {
+    text-align: center;
+}
 
 
 
