@@ -11,6 +11,9 @@ body.disabled:after{
     left: 0;
 }
 
+html {
+    font-size: 16px;
+}
 
 *{
     /*    font-family:'HelveticaNeue';*/
@@ -28,6 +31,7 @@ img{
 
 p {
     line-height: 1.7;
+    margin-bottom: 1.7rem;
 }
 
 h2 {
@@ -73,7 +77,7 @@ header {
     max-width: 130px;
 }
 
-#main-menu a{
+#main-menu .nav-link{
     text-transform: uppercase;
 }
 
@@ -81,13 +85,35 @@ header {
     padding: 0.2rem 1rem;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-    border-bottom: 3px solid #7aba48;
-}
+
 
 .navbar-nav .dropdown-menu {
     background: #7aba48;
+}
+
+.navbar-nav .dropdown-menu a {
+    color: #fff;
+    display: block;
+    padding: 5px 15px;
+    line-height: 1.1;
+}
+
+.navbar-nav .dropdown-menu li:first-of-type a {
+    padding-top: 10px;
+}
+
+.navbar-nav .dropdown-menu li:last-of-type a {
+    padding-bottom: 10px;
+}
+
+.navbar-nav .dropdown-menu a:hover{
+    color: #7aba48;
+    background: #fff;
+    text-decoration: none;
+}
+
+.dropdown-item {
+    padding: 0;
 }
 
 .dropdown-toggle::after {
@@ -144,10 +170,17 @@ header {
 
 /*PRESENTATION SECTION*/
 
+.presentation{
+    position: relative;
+}
+
 .presentation article {
     border-bottom: solid 2px #7aba48;
 }
 
+.presentation .row div:last-of-type article {
+    border-bottom: none;
+}
 
 .presentation article {
     padding: 20px;
@@ -169,7 +202,110 @@ header {
     text-align: center;
 }
 
+.presentation .container:after {
+    position: absolute;
+    height: 6px;
+    width: 200px;
+    background: #7aba48;
+    z-index: 10;
+    display: block;
+    content: '';
+    top: -3px;
+    left: 0px;
+}
 
+/*LETTER SECTION*/
+.letter {
+    padding: 80px 0;
+}
+
+/*AUTHORS SECTION*/
+.owl-carousel {
+    margin-top: 70px;
+}
+
+.authors .owl-item {
+    padding: 17px
+}
+
+.owl-carousel a{
+    color: #000;
+}
+
+.owl-carousel a:hover{
+    text-decoration: none;
+}
+
+.authors figure {
+    margin-bottom: 35px;
+}
+
+.h3-border-center:after {
+    position: absolute;
+    height: 6px;
+    width: 200px;
+    background: #7aba48;
+    display: block;
+    content: '';
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.authors .owl-carousel p {
+    position: relative;
+}
+
+.authors .owl-carousel p:after {
+    position: absolute;
+    height: 2px;
+    width: 160px;
+    background: #7aba48;
+    display: block;
+    content: '';
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*SPONSORS SECTION*/
+.sponsors .owl-item {
+    padding: 17px;
+}
+
+/*RATE SECTION*/
+.rate .br-wrapper {
+    text-align: center;
+    margin-top: 70px;
+}
+
+/*FOOTER*/
+footer {
+    border-top: 8px solid #7aba48;
+}
+
+footer .nav-link{
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer .nav-link{
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer .navbar-nav .nav-link:hover,
+footer .navbar-nav .nav-link.active {
+    color: #7aba48;
+}
+
+footer .dropdown-menu {
+
+}
 
 /*CUSTOM CLASS STYLE*/
 
@@ -177,7 +313,7 @@ header {
     border-bottom: 8px solid #7aba48;
 }
 
-.text-green {
+.h2-green {
     color: #7aba48;
     border-bottom: solid 3px #7aba48;
     padding-bottom: 30px;
@@ -190,10 +326,134 @@ header {
     height: 6px;
     width: 200px;
     background: #7aba48;
-    z-index: 10;
     display: block;
     content: '';
     bottom: -25px;
     left: -100px;
 }
 
+.p-green {
+    color: #7aba48;
+    font-weight: bold;
+}
+
+.green-border-right {
+    border-right: solid 2px #7aba48;
+}
+
+/*CALENDAR*/
+
+.calendar header {
+    border: none;
+}
+.calendar h5{
+    color: #7aba48;
+    text-transform: uppercase;
+}
+.br-theme-fontawesome-stars-o .br-widget a {
+    font-size: 3em !important;
+    margin: 0 5px;
+}
+
+
+
+
+.calendar {
+    position: relative;
+    overflow: hidden;
+    text-transform: capitalize;
+    text-align: center;
+    font: 15px/1em inherit;
+    color: #545A5C; }
+.calendar a {
+    text-decoration: none;
+    color: inherit; }
+.calendar header .btn-prev {
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    text-align: center;
+    line-height: 30px;
+    color: #7aba48;
+    border-radius: 0;
+    border-right: 15px solid #7aba48;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    padding: 0; }
+.calendar header .btn-next {
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    text-align: center;
+    line-height: 30px;
+    color: #7aba48;
+    border-radius: 0;
+    border-left: 15px solid #7aba48;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    padding: 0; }
+
+.calendar header .btn:hover {
+}
+.calendar header .btn-prev {
+    left: 0;
+    top: 0; }
+.calendar header .btn-next {
+    right: 0;
+    top: 0; }
+.calendar header .month {
+    padding: 0;
+    margin: 0; }
+.calendar table {
+    width: 100%;
+    margin: 20px 0;
+    border-spacing: 0px; }
+.calendar thead {
+    font-size: .9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #000; }
+.calendar thead td {
+    padding-bottom: 6px; }
+.calendar thead td:nth-last-of-type(-n+2){
+    color: #7aba48;
+}
+
+.calendar tbody tr td:nth-last-of-type(-n+2){
+    color: #7aba48;
+}
+
+.calendar .day {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 1.7em;
+    border-radius: 50%;
+    border: 2px solid transparent; }
+.calendar .day:hover {
+    color: #fff;
+}
+.calendar .day.today {
+    background: #7aba48;
+    color: white !important; }
+.calendar .day.wrong-month {
+    color: #CBD1D2; }
+.calendar .day.wrong-month:hover {
+    border: 2px solid transparent; }
+.calendar .event-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #545A5C; }
+.calendar .filler {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #545A5C;
+    transform: translate(-50%, -50%); }
