@@ -6,6 +6,19 @@
     margin: 0 10px;
 }
 
+.registration .form-control {
+    width: auto;
+    
+}
+
+.registration .form-group {
+    text-align: right;
+}
+
+.registration .form-control {
+    width: 55%;
+}
+
 }
 
 
@@ -28,7 +41,14 @@
     margin: 0 5px;
 }
 
+.rate-border-right {
+    border-right: solid 2px #7aba48;
+    border-bottom: none;
+}
 
+.rate .br-wrapper {
+    margin-top: 70px;
+}
     
 }
 
@@ -36,6 +56,10 @@
 
 
 @media(min-width:992px){
+    
+    body {
+    font-size: 16px;
+}
 
     .navbar-light .navbar-nav .nav-link {
     padding: 0.2rem .4rem;
