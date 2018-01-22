@@ -1,140 +1,152 @@
 
 @media(min-width:576px){
- 
-.br-theme-fontawesome-stars-o .br-widget a {
-    font-size: 4em !important;
-    margin: 0 10px;
-}
 
-.registration .form-control {
-    width: auto;
-    
-}
+    .br-theme-fontawesome-stars-o .br-widget a {
+        font-size: 4em !important;
+        margin: 0 10px;
+    }
 
-.registration .form-group {
-    text-align: right;
-}
+    .registration .form-control {
+        width: auto;
 
-.registration .form-control {
-    width: 55%;
-}
+    }
+
+    .registration .form-group {
+        text-align: right;
+    }
+
+    .registration .form-control {
+        width: 55%;
+    }
+
+    .lead figure img{
+        max-width: 100%;
+    }
 
 }
 
 
 @media(min-width:768px){
- 
-.presentation article {
-    border-right: solid 2px #7aba48;
-}
 
-.presentation .row div:nth-last-of-type(-n+2) article {
-    border-bottom: none;
-}
+    .lead .container {
+        padding: 120px 0;
+    }
 
-.presentation .row div:nth-of-type(2n) article {
-    border-right: none;
-}
+    .letter {
+        padding: 80px 0;
+    }
 
-.br-theme-fontawesome-stars-o .br-widget a {
-    font-size: 4em !important;
-    margin: 0 5px;
-}
+    h2 {
+        font-size: 3rem;
+    }
 
-.rate-border-right {
-    border-right: solid 2px #7aba48;
-    border-bottom: none;
-}
+    h3 {
+        font-size: 2.2rem;
+    }
 
-.rate .br-wrapper {
-    margin-top: 70px;
-}
-    
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    .presentation article {
+        border-right: solid 2px #7aba48;
+    }
+
+    .presentation .row div:nth-last-of-type(-n+2) article {
+        border-bottom: none;
+    }
+
+    .presentation .row div:nth-of-type(2n) article {
+        border-right: none;
+    }
+
+    .br-theme-fontawesome-stars-o .br-widget a {
+        font-size: 4em !important;
+        margin: 0 5px;
+    }
+
+    .rate-border-right {
+        border-right: solid 2px #7aba48;
+        border-bottom: none;
+    }
+
+    .rate .br-wrapper {
+        margin-top: 70px;
+    }
+
 }
 
 
 
 
 @media(min-width:992px){
-    
+
     body {
-    font-size: 16px;
-}
+        font-size: 16px;
+    }
+
+    .lead .container {
+        padding: 150px 0;
+    }
 
     .navbar-light .navbar-nav .nav-link {
-    padding: 0.2rem .4rem;
-}
+        padding: 0.2rem .4rem;
+    }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-    border-bottom: 3px solid #7aba48;
-}
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {
+        border-bottom: 3px solid #7aba48;
+    }
 
-.navbar-brand img {
-    max-width: 250px;
-    height: 100%;
-}
+    .navbar-brand img {
+        max-width: 250px;
+        height: 100%;
+    }
 
-.presentation .row div:nth-last-of-type(-n+2) article {
-    border-bottom: solid 2px #7aba48;
-}
+    .presentation .row div:nth-last-of-type(-n+2) article {
+        border-bottom: solid 2px #7aba48;
+    }
 
-.presentation .row div:nth-of-type(2n) article {
-    border-right: solid 2px #7aba48;
-}
+    .presentation .row div:nth-of-type(2n) article {
+        border-right: solid 2px #7aba48;
+    }
 
-.presentation .row div:nth-last-of-type(-n+3) article {
-    border-bottom: none;
-}
+    .presentation .row div:nth-last-of-type(-n+3) article {
+        border-bottom: none;
+    }
 
-.presentation .row div:nth-of-type(3n) article {
-    border-right: none;
-}
+    .presentation .row div:nth-of-type(3n) article {
+        border-right: none;
+    }
 
-.br-theme-fontawesome-stars-o .br-widget a {
-    font-size: 5em !important;
-    margin: 0 10px;
-}
+    .br-theme-fontawesome-stars-o .br-widget a {
+        font-size: 5em !important;
+        margin: 0 10px;
+    }
 
 
 }
 
 @media(min-width:1200px){
-   
-    .navbar-light .navbar-nav .nav-link {
-    padding: 0.2rem 1.3rem;
-}
 
-.br-theme-fontawesome-stars-o .br-widget a {
-    font-size: 6em !important;
-    margin: 0 10px;
-}
-    
+    .navbar-light .navbar-nav .nav-link {
+        padding: 0.2rem 1.3rem;
+    }
+
+    .br-theme-fontawesome-stars-o .br-widget a {
+        font-size: 6em !important;
+        margin: 0 10px;
+    }
+
 }
 
 @media(min-width:1245px){
-   
+
     .container {
         max-width: 1200px;
     }
-    
 
-    
+
+
 }
 
-
-
-/*
-.presentation article {
-    border-bottom: solid 2px #7aba48;
-    border-right: solid 2px #7aba48;
-}
-
-.presentation .row div:nth-last-of-type(-n+3) article {
-    border-bottom: none;
-}
-
-.presentation .row div:nth-of-type(3n) article {
-    border-right: none;
-}
-*/
