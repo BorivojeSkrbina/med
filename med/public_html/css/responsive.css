@@ -22,6 +22,11 @@
     .lead figure img{
         max-width: 100%;
     }
+    
+        .test-banner{
+    padding: 130px 0;
+}
+
 
 }
 
@@ -73,6 +78,18 @@
     .rate .br-wrapper {
         margin-top: 70px;
     }
+    
+    .test-banner{
+    padding: 180px 0;
+}
+
+.test-banner h2{
+    font-size: 5rem;
+}
+    
+    .banner-text {
+    width: 65%;
+}
 
 }
 
@@ -96,6 +113,7 @@
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
         border-bottom: 3px solid #7aba48;
+        color: #000;
     }
 
     .navbar-brand img {
@@ -123,6 +141,10 @@
         font-size: 5em !important;
         margin: 0 10px;
     }
+    
+        .banner-text {
+    width: 75%;
+}
 
 
 }
