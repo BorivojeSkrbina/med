@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+
+
+    $('.marker').click(function (e) {
+        e.preventDefault();
+        $(this).find('.fa').toggleClass('text-danger');
+    });
+
+
+//OWL-CAROUSEL
     if ($('.owl-carousel').length > 0) {
         $('.authors-slider').owlCarousel({
             loop: true,
@@ -44,15 +53,15 @@ $(document).ready(function () {
 
 
 
-
+//CALENDAR
     if ($('.calendar-container').length > 0) {
         $("#container").simpleCalendar({
             months: ['januar', 'februar', 'mart', 'april', 'maj', 'jun', 'jul', 'avgust', 'septembar', 'oktobar', 'novembar', 'decembar'], //string of months starting from january
             days: ['ne', 'po', 'ut', 'sr', 'če', 'pe', 'su'], //string of days starting from sunday
             minDate: "YYYY-MM-DD", // minimum date
             maxDate: "YYYY-MM-DD", // maximum date
-            insertEvent: false, // can insert events
-            displayEvent: false, // display existing event
+            insertEvent: true, // can insert events
+            displayEvent: true, // display existing event
             fixedStartDay: true, // Week begin always by monday
             event: [], //List of event
             insertCallback: function () {} // Callback when an event is added to the calendar
@@ -66,7 +75,7 @@ $(document).ready(function () {
 
 
 
-
+//SMILEY RATING
     $('.example-fontawesome-o').each(function () {
         var currentRating = $(this).data('current-rating');
 
