@@ -1,16 +1,4 @@
 
-body.disabled:after{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index: 10;
-    display: block;
-    content:'';
-    top:0;
-    left: 0;
-}
-
 body {
     font-size: 14px;
 }
@@ -96,27 +84,39 @@ header {
     color: #7aba48;
 }
 
-
-.navbar-nav .dropdown-menu {
+.navbar-nav li a{
+    position: relative;
+}
+.navbar-nav a > .fa{
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+    top:50%;
+    transform: translateY(-50%);
+    display: block;
+    
+}
+.navbar-nav .sub-menu {
     background: #7aba48;
+    display: none;
 }
 
-.navbar-nav .dropdown-menu a {
+.navbar-nav .sub-menu a {
     color: #fff;
     display: block;
     padding: 5px 15px;
     line-height: 1.1;
 }
 
-.navbar-nav .dropdown-menu li:first-of-type a {
+.navbar-nav .sub-menu li:first-of-type a {
     padding-top: 10px;
 }
 
-.navbar-nav .dropdown-menu li:last-of-type a {
+.navbar-nav .sub-menu li:last-of-type a {
     padding-bottom: 10px;
 }
 
-.navbar-nav .dropdown-menu a:hover{
+.navbar-nav .sub-menu a:hover{
     color: #7aba48;
     background: #fff;
     text-decoration: none;
@@ -706,13 +706,15 @@ select.form-control:not([size]):not([multiple]) {
     background: #0f0;
 }
 .form-check.has-succes .form-check-label:after{
-    content:'\2713';
+    font: normal normal normal 18px/1 FontAwesome;
+    content:'\f00c';
     color:#fff;
     margin-left: 15px;
     font-size: 18px;
 }
 .form-check.has-danger .form-check-label:after{
-    content:'\2718';
+    font: normal normal normal 18px/1 FontAwesome;
+    content:'\f00d';
     color:#fff;
     margin-left: 15px;
     font-size: 18px;
@@ -758,6 +760,20 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .testing .alert {
+    border-radius: 0;
+}
+
+.kviz .has-succes label,
+.kviz .has-danger label{
+    color: #fff;
+}
+
+.kviz .alert-success,
+.kviz .alert-danger{
+    border: none;
+}
+
+.kviz .form-check {
     border-radius: 0;
 }
 

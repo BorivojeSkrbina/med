@@ -101,6 +101,21 @@
 
 
 @media(min-width:992px){
+    .navbar-nav a > .fa{
+        display: none;
+    }
+    .sub-menu{
+        display: none !important;
+        position: absolute;
+        top:100%;
+        z-index: 30;
+    }
+    .navbar-nav .nav-item{
+        position: relative;
+    }
+    .navbar-nav > li:hover >.sub-menu{
+        display: block !important;
+    }
 
     body {
         font-size: 16px;
@@ -112,6 +127,8 @@
 
     .navbar-light .navbar-nav .nav-link {
         padding: 0.2rem .4rem;
+        font-size: 14px;
+        
     }
 
     .navbar-light .navbar-nav .nav-link:hover,
@@ -157,8 +174,10 @@
 
     .navbar-light .navbar-nav .nav-link {
         padding: 0.2rem 1.3rem;
+        font-size: 15px;
     }
 
+    
     .br-theme-fontawesome-stars-o .br-widget a {
         font-size: 6em !important;
         margin: 0 10px;
@@ -171,7 +190,9 @@
     .container {
         max-width: 1200px;
     }
-
+.navbar-light .navbar-nav .nav-link {
+        font-size: 16px;
+    }
 
 
 }
