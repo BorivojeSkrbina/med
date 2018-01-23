@@ -6,6 +6,13 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).find('.fa').toggleClass('text-danger');
     });
+    
+    
+    $('.navbar-nav a > .fa').click(function(e){
+    e.preventDefault();
+    $(this).toggleClass('fa-close fa-plus');
+    $(this).parent().next('.sub-menu').slideToggle();
+});
 
 
 //OWL-CAROUSEL
